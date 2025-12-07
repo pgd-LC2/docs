@@ -1,150 +1,150 @@
 ---
-title: "Domains"
-description: "Connect custom domains to your websites"
+title: "域名"
+description: "将自定义域名连接到您的网站"
 ---
 
-## Domain options
+## 域名选项
 
-### Default subdomain
+### 默认子域名
 
-Every project gets a free subdomain:
+每个项目都会获得一个免费子域名：
 
 ```
 yoursite.aisitebuilder.app
 ```
 
-This is automatically configured and ready to use immediately.
+这会自动配置并立即可用。
 
-### Custom domains
+### 自定义域名
 
-Connect your own domain:
+连接您自己的域名：
 
 ```
 www.yourdomain.com
 yourdomain.com
 ```
 
-Custom domains give your website a professional appearance and build trust with visitors.
+自定义域名使您的网站看起来更专业，并与访问者建立信任。
 
-## Adding a custom domain
+## 添加自定义域名
 
-### Step 1: Purchase a domain
+### 步骤 1：购买域名
 
-Buy a domain from a registrar:
+从注册商购买域名：
 
 - Namecheap
 - GoDaddy
 - Google Domains
 - Cloudflare
-- Any other registrar
+- 任何其他注册商
 
-### Step 2: Add domain to AISiteBuilder
+### 步骤 2：将域名添加到 AISiteBuilder
 
-1. Go to **Project Settings → Domains**
-2. Click **Add Custom Domain**
-3. Enter your domain name
-4. Click **Add Domain**
+1. 转到 **项目设置 → 域名**
+2. 点击 **添加自定义域名**
+3. 输入您的域名
+4. 点击 **添加域名**
 
-### Step 3: Configure DNS
+### 步骤 3：配置 DNS
 
-Add DNS records at your domain registrar:
+在您的域名注册商处添加 DNS 记录：
 
 <Tabs>
-  <Tab title="Root domain">
-    For `yourdomain.com`:
+  <Tab title="根域名">
+    对于 `yourdomain.com`：
 
-    | Type | Name | Value |
-    |------|------|-------|
+    | 类型 | 名称 | 值 |
+    |------|------|----------|
     | A | @ | `76.76.21.21` |
     | AAAA | @ | `2606:4700:3033::ac43:bd8d` |
   </Tab>
 
-  <Tab title="Subdomain">
-    For `www.yourdomain.com`:
+  <Tab title="子域名">
+    对于 `www.yourdomain.com`：
 
-    | Type | Name | Value |
-    |------|------|-------|
+    | 类型 | 名称 | 值 |
+    |------|------|----------|
     | CNAME | www | `cname.aisitebuilder.app` |
   </Tab>
 
-  <Tab title="Both">
-    For both `yourdomain.com` and `www.yourdomain.com`:
+  <Tab title="两者">
+    对于 `yourdomain.com` 和 `www.yourdomain.com`：
 
-    | Type | Name | Value |
-    |------|------|-------|
+    | 类型 | 名称 | 值 |
+    |------|------|----------|
     | A | @ | `76.76.21.21` |
     | AAAA | @ | `2606:4700:3033::ac43:bd8d` |
     | CNAME | www | `cname.aisitebuilder.app` |
   </Tab>
 </Tabs>
 
-### Step 4: Verify domain
+### 步骤 4：验证域名
 
-1. Wait for DNS propagation (5 minutes to 48 hours)
-2. AISiteBuilder will automatically verify your domain
-3. SSL certificate is generated automatically
-4. Your website is live on your custom domain
+1. 等待 DNS 传播（5 分钟到 48 小时）
+2. AISiteBuilder 将自动验证您的域名
+3. SSL 证书自动生成
+4. 您的网站在自定义域名上上线
 
 <Tip>
-  DNS changes typically propagate within 15-30 minutes, but can take up to 48 hours in some cases.
+  DNS 更改通常在 15-30 分钟内传播，但在某些情况下可能需要长达 48 小时。
 </Tip>
 
-## SSL certificates
+## SSL 证书
 
-### Automatic SSL
+### 自动 SSL
 
-SSL certificates are automatically:
+SSL 证书会自动：
 
-- Generated when you add a domain
-- Renewed before expiration
-- Applied to all domains
+- 在您添加域名时生成
+- 在到期前续订
+- 应用于所有域名
 
-Your website is always served over HTTPS.
+您的网站始终通过 HTTPS 提供服务。
 
-### Manual SSL request
+### 手动 SSL 请求
 
-If automatic generation fails:
+如果自动生成失败：
 
-1. Go to **Project Settings → Domains**
-2. Find your domain
-3. Click **Request SSL Certificate**
-4. Certificate will be generated
+1. 转到 **项目设置 → 域名**
+2. 找到您的域名
+3. 点击 **请求 SSL 证书**
+4. 证书将被生成
 
-## Domain management
+## 域名管理
 
-### Primary domain
+### 主域名
 
-Set which domain is your main URL:
+设置哪个域名是您的主 URL：
 
-1. Go to **Project Settings → Domains**
-2. Click **Set as Primary** on your preferred domain
-3. Other domains will redirect to primary
+1. 转到 **项目设置 → 域名**
+2. 在您首选的域名上点击 **设置为主域名**
+3. 其他域名将重定向到主域名
 
-### Domain aliases
+### 域名别名
 
-Add multiple domains that point to your website:
+添加指向您网站的多个域名：
 
-- All aliases redirect to primary domain
-- Useful for multiple TLDs (.com, .net, .io)
-- Maintain SEO with proper redirects
+- 所有别名重定向到主域名
+- 适用于多个顶级域名（.com、.net、.io）
+- 通过适当的重定向维护 SEO
 
-### Removing domains
+### 删除域名
 
-Delete domains you no longer need:
+删除您不再需要的域名：
 
-1. Go to **Project Settings → Domains**
-2. Click **Remove** next to the domain
-3. Confirm removal
+1. 转到 **项目设置 → 域名**
+2. 点击域名旁边的 **删除**
+3. 确认删除
 
 <Warning>
-  Removing a domain will make your website inaccessible at that URL.
+  删除域名将使您的网站在该 URL 上无法访问。
 </Warning>
 
-## Subdomains
+## 子域名
 
-### Using subdomains
+### 使用子域名
 
-Create subdomains for different purposes:
+为不同目的创建子域名：
 
 ```
 blog.yourdomain.com
@@ -152,111 +152,111 @@ shop.yourdomain.com
 app.yourdomain.com
 ```
 
-### Adding subdomains
+### 添加子域名
 
-1. Add subdomain in AISiteBuilder
-2. Create CNAME record at your registrar:
+1. 在 AISiteBuilder 中添加子域名
+2. 在您的注册商处创建 CNAME 记录：
 
-| Type | Name | Value |
-|------|------|-------|
+| 类型 | 名称 | 值 |
+|------|------|----------|
 | CNAME | blog | `cname.aisitebuilder.app` |
 
-### Subdomain as primary
+### 子域名作为主域名
 
-You can use a subdomain as your primary domain:
+您可以使用子域名作为主域名：
 
-1. Add subdomain
-2. Set as primary domain
-3. Configure DNS
+1. 添加子域名
+2. 设置为主域名
+3. 配置 DNS
 
-## DNS configuration guides
+## DNS 配置指南
 
 ### Namecheap
 
-1. Log in to Namecheap
-2. Go to **Domain List**
-3. Click **Manage** next to your domain
-4. Go to **Advanced DNS** tab
-5. Add the DNS records
-6. Save changes
+1. 登录 Namecheap
+2. 转到 **域名列表**
+3. 点击域名旁边的 **管理**
+4. 转到 **高级 DNS** 选项卡
+5. 添加 DNS 记录
+6. 保存更改
 
 ### GoDaddy
 
-1. Log in to GoDaddy
-2. Go to **My Products**
-3. Click **DNS** next to your domain
-4. Add the DNS records
-5. Save changes
+1. 登录 GoDaddy
+2. 转到 **我的产品**
+3. 点击域名旁边的 **DNS**
+4. 添加 DNS 记录
+5. 保存更改
 
 ### Cloudflare
 
-1. Log in to Cloudflare
-2. Select your domain
-3. Go to **DNS** tab
-4. Add the DNS records
-5. Ensure proxy status is **DNS only** (gray cloud)
+1. 登录 Cloudflare
+2. 选择您的域名
+3. 转到 **DNS** 选项卡
+4. 添加 DNS 记录
+5. 确保代理状态为 **仅 DNS**（灰色云）
 
 ### Google Domains
 
-1. Log in to Google Domains
-2. Select your domain
-3. Go to **DNS** tab
-4. Add the DNS records
-5. Save changes
+1. 登录 Google Domains
+2. 选择您的域名
+3. 转到 **DNS** 选项卡
+4. 添加 DNS 记录
+5. 保存更改
 
-## Troubleshooting
+## 故障排除
 
 <AccordionGroup>
-  <Accordion title="Domain not connecting">
-    If your domain isn't connecting:
-    - Verify DNS records are correct
-    - Wait for DNS propagation (up to 48 hours)
-    - Check for typos in DNS configuration
-    - Ensure no conflicting DNS records exist
+  <Accordion title="域名无法连接">
+    如果您的域名无法连接：
+    - 验证 DNS 记录是否正确
+    - 等待 DNS 传播（最多 48 小时）
+    - 检查 DNS 配置中的拼写错误
+    - 确保不存在冲突的 DNS 记录
   </Accordion>
 
-  <Accordion title="SSL certificate not generating">
-    If SSL isn't working:
-    - Verify domain is properly connected
-    - Wait 10-15 minutes after DNS propagation
-    - Try manual SSL request
-    - Check that DNS records point to correct IPs
+  <Accordion title="SSL 证书未生成">
+    如果 SSL 不起作用：
+    - 验证域名已正确连接
+    - DNS 传播后等待 10-15 分钟
+    - 尝试手动 SSL 请求
+    - 检查 DNS 记录是否指向正确的 IP
   </Accordion>
 
-  <Accordion title="Redirect loops">
-    If you're experiencing redirect loops:
-    - Check that only one domain is set as primary
-    - Verify no conflicting redirects in DNS
-    - Clear browser cache
-    - Check for redirect rules at registrar
+  <Accordion title="重定向循环">
+    如果您遇到重定向循环：
+    - 检查只有一个域名设置为主域名
+    - 验证 DNS 中没有冲突的重定向
+    - 清除浏览器缓存
+    - 检查注册商处的重定向规则
   </Accordion>
 
-  <Accordion title="DNS propagation check">
-    To check DNS propagation:
-    - Use [whatsmydns.net](https://whatsmydns.net)
-    - Enter your domain
-    - Check if records are visible globally
+  <Accordion title="DNS 传播检查">
+    要检查 DNS 传播：
+    - 使用 [whatsmydns.net](https://whatsmydns.net)
+    - 输入您的域名
+    - 检查记录是否在全球可见
   </Accordion>
 </AccordionGroup>
 
-## Best practices
+## 最佳实践
 
 <CardGroup cols={2}>
 
-<Card title="Use www subdomain" icon="globe">
-  Configure both root and www subdomain for maximum compatibility.
+<Card title="使用 www 子域名" icon="globe">
+  配置根域名和 www 子域名以实现最大兼容性。
 </Card>
 
-<Card title="Set primary domain" icon="star">
-  Choose one primary domain to avoid duplicate content issues.
+<Card title="设置主域名" icon="star">
+  选择一个主域名以避免重复内容问题。
 </Card>
 
-<Card title="Enable SSL" icon="lock">
-  Always use HTTPS for security and SEO benefits.
+<Card title="启用 SSL" icon="lock">
+  始终使用 HTTPS 以获得安全性和 SEO 优势。
 </Card>
 
-<Card title="Monitor expiration" icon="calendar">
-  Keep track of domain renewal dates to avoid expiration.
+<Card title="监控到期" icon="calendar">
+  跟踪域名续订日期以避免到期。
 </Card>
 
 </CardGroup>

@@ -1,354 +1,351 @@
 ---
-title: "Token efficiency"
-description: "Maximize your tokens and build more with less"
+title: "令牌效率"
+description: "最大化您的令牌，用更少的资源构建更多"
 ---
 
-## Understanding tokens
+## 理解令牌
 
-Tokens are the currency of AI interactions. Each message you send and each response from AI consumes tokens.
+令牌是 AI 交互的货币。您发送的每条消息和 AI 的每个响应都会消耗令牌。
 
-### What uses tokens
+### 什么使用令牌
 
-- **Your prompts** - Messages you send to AI
-- **AI responses** - Code and text AI generates
-- **Context** - Previous conversation history
-- **Code edits** - Modifications to existing code
+- **您的提示** - 您发送给 AI 的消息
+- **AI 响应** - AI 生成的代码和文本
+- **上下文** - 以前的对话历史
+- **代码编辑** - 对现有代码的修改
 
-### What doesn't use tokens
+### 什么不使用令牌
 
-- **Preview** - Viewing your website
-- **Discussion mode** - Brainstorming without building
-- **Settings changes** - Configuring your project
-- **File browsing** - Viewing project files
+- **预览** - 查看您的网站
+- **讨论模式** - 在不构建的情况下进行头脑风暴
+- **设置更改** - 配置您的项目
+- **文件浏览** - 查看项目文件
 
-## Token-saving strategies
+## 节省令牌的策略
 
-### Use plan mode
+### 使用计划模式
 
-Plan mode helps you refine requirements before building:
+计划模式帮助您在构建之前完善需求：
 
-1. Describe your complete vision
-2. AI creates a detailed plan
-3. Review and adjust the plan
-4. Build only when plan is perfect
+1. 描述您的完整愿景
+2. AI 创建详细计划
+3. 审查并调整计划
+4. 仅在计划完美时构建
 
-This prevents costly rebuilds from misunderstood requirements.
+这可以防止因误解需求而导致的昂贵重建。
 
-### Use discussion mode
+### 使用讨论模式
 
-Brainstorm and clarify ideas without using tokens:
-
-```text
-[In discussion mode]
-I'm thinking about adding a blog to my website. 
-What sections should I include? What's the best 
-way to organize posts?
-```
-
-Once you've decided, switch to build mode with clear requirements.
-
-### Be specific upfront
-
-Vague prompts lead to back-and-forth corrections:
-
-❌ **Wasteful:**
-```text
-You: "Add a contact form"
-AI: [creates basic form]
-You: "Add phone number field"
-AI: [adds field]
-You: "Add validation"
-AI: [adds validation]
-You: "Make it two columns"
-AI: [restructures form]
-```
-
-✅ **Efficient:**
-```text
-You: "Add a contact form with name, email, phone, and 
-message fields. Use two-column layout. Include validation 
-for all fields. Show error messages below each field."
-AI: [creates complete form correctly]
-```
-
-### Batch related changes
-
-Group similar changes together:
-
-❌ **Wasteful:**
-```text
-"Change the button color to blue"
-"Make the button larger"
-"Add rounded corners to the button"
-"Add a shadow to the button"
-```
-
-✅ **Efficient:**
-```text
-"Update the button: blue background, larger size, 
-rounded corners, and subtle shadow"
-```
-
-### Use the visual editor
-
-For simple changes, use the visual editor instead of AI:
-
-- Text edits
-- Color changes
-- Image swaps
-- Spacing adjustments
-
-Save tokens for complex changes that require code.
-
-### Provide complete information
-
-Include all necessary details in one prompt:
+在不使用令牌的情况下进行头脑风暴和澄清想法：
 
 ```text
-Create a pricing section with:
-- Three tiers: Basic ($9/mo), Pro ($29/mo), Enterprise (custom)
-- Features list for each tier
-- "Most popular" badge on Pro tier
-- Annual/monthly toggle
-- CTA button on each tier
-- Responsive design (stack on mobile)
+[在讨论模式下]
+我正在考虑在我的网站上添加博客。
+我应该包含哪些区块？组织帖子的最佳方式是什么？
 ```
 
-### Reference existing elements
+一旦您决定了，切换到构建模式并提供清晰的需求。
 
-Build on what exists:
+### 预先要具体
+
+模糊的提示会导致来回纠正：
+
+❌ **浪费：**
+```text
+您："添加联系表单"
+AI：[创建基本表单]
+您："添加电话号码字段"
+AI：[添加字段]
+您："添加验证"
+AI：[添加验证]
+您："使其成为两列"
+AI：[重构表单]
+```
+
+✅ **高效：**
+```text
+您："添加包含姓名、电子邮件、电话和消息字段的联系表单。
+使用两列布局。包含所有字段的验证。
+在每个字段下方显示错误消息。"
+AI：[正确创建完整表单]
+```
+
+### 批量相关更改
+
+将类似的更改组合在一起：
+
+❌ **浪费：**
+```text
+"将按钮颜色更改为蓝色"
+"使按钮更大"
+"为按钮添加圆角"
+"为按钮添加阴影"
+```
+
+✅ **高效：**
+```text
+"更新按钮：蓝色背景、更大尺寸、
+圆角和微妙阴影"
+```
+
+### 使用可视化编辑器
+
+对于简单的更改，使用可视化编辑器而不是 AI：
+
+- 文本编辑
+- 颜色更改
+- 图像交换
+- 间距调整
+
+为需要代码的复杂更改保存令牌。
+
+### 提供完整信息
+
+在一个提示中包含所有必要的详细信息：
 
 ```text
-"Create a testimonials section using the same card 
-style as the features section"
+创建包含以下内容的定价区块：
+- 三个层级：基础版（$9/月）、专业版（$29/月）、企业版（自定义）
+- 每个层级的功能列表
+- 专业版层级上的"最受欢迎"徽章
+- 年度/月度切换
+- 每个层级上的 CTA 按钮
+- 响应式设计（在移动设备上堆叠）
 ```
 
-This is clearer and more efficient than describing the style from scratch.
+### 参考现有元素
 
-## Efficient workflows
-
-### Start with structure
-
-Build the skeleton first, then add details:
-
-1. **Structure:** "Create a landing page with header, hero, features, testimonials, pricing, and footer"
-2. **Content:** "Add this content to the hero section: [content]"
-3. **Styling:** "Update the color scheme to use blue and green"
-4. **Polish:** "Add animations and hover effects"
-
-### Use templates
-
-Start with a template for common patterns:
+在现有基础上构建：
 
 ```text
-"Create a standard SaaS landing page template"
+"使用与功能区块相同的卡片样式创建推荐区块"
 ```
 
-Then customize:
+这比从头描述样式更清晰、更高效。
+
+## 高效的工作流程
+
+### 从结构开始
+
+首先构建骨架，然后添加细节：
+
+1. **结构：** "创建包含标题、英雄、功能、推荐、定价和页脚的落地页"
+2. **内容：** "将此内容添加到英雄区块：[内容]"
+3. **样式：** "更新配色方案以使用蓝色和绿色"
+4. **润色：** "添加动画和悬停效果"
+
+### 使用模板
+
+从常见模式的模板开始：
 
 ```text
-"Update the hero headline to: [your headline]"
-"Change the features to: [your features]"
+"创建标准 SaaS 落地页模板"
 ```
 
-### Iterate strategically
-
-Make changes in logical order:
-
-1. Get the layout right
-2. Add content
-3. Refine styling
-4. Add interactions
-5. Polish details
-
-Don't jump around randomly—each iteration should build on the previous.
-
-### Save successful prompts
-
-Keep a document of prompts that worked well:
+然后自定义：
 
 ```text
-Pricing section prompt:
-"Create a pricing section with three tiers in a row. 
-Each tier should have: name, price, feature list, 
-and CTA button. Highlight the middle tier. Use card 
-design with subtle shadows."
+"将英雄标题更新为：[您的标题]"
+"将功能更改为：[您的功能]"
 ```
 
-Reuse these for future projects.
+### 战略性迭代
 
-## Advanced techniques
+按逻辑顺序进行更改：
 
-### Incremental building
+1. 正确布局
+2. 添加内容
+3. 完善样式
+4. 添加交互
+5. 润色细节
 
-Build complex features in stages:
+不要随意跳跃——每次迭代都应该建立在前一次的基础上。
 
-**Stage 1:** Basic functionality
-```text
-"Create a blog post list showing title and excerpt"
-```
+### 保存成功的提示
 
-**Stage 2:** Add features
-```text
-"Add category filtering to the blog list"
-```
-
-**Stage 3:** Polish
-```text
-"Add pagination and search to the blog"
-```
-
-### Selective editing
-
-Edit specific parts instead of regenerating:
+保留一份有效提示的文档：
 
 ```text
-"In the hero section, change only the headline to: 
-[new headline]. Keep everything else the same."
+定价区块提示：
+"创建包含三个层级的定价区块。
+每个层级应该有：名称、价格、功能列表和 CTA 按钮。
+突出显示中间层级。使用带有微妙阴影的卡片设计。"
 ```
 
-### Use code view
+在未来的项目中重复使用这些。
 
-For developers, sometimes editing code directly is faster:
+## 高级技术
 
-1. Generate initial code with AI
-2. Make small tweaks in code view
-3. Use AI only for complex changes
+### 增量构建
 
-### Leverage context
+分阶段构建复杂功能：
 
-AI remembers your conversation:
+**阶段 1：** 基本功能
+```text
+"创建显示标题和摘录的博客文章列表"
+```
+
+**阶段 2：** 添加功能
+```text
+"为博客列表添加类别过滤"
+```
+
+**阶段 3：** 润色
+```text
+"为博客添加分页和搜索"
+```
+
+### 选择性编辑
+
+编辑特定部分而不是重新生成：
 
 ```text
-"Use the same color scheme as before"
-"Add that feature we discussed earlier"
-"Apply the same style to this new section"
+"在英雄区块中，仅将标题更改为：
+[新标题]。保持其他所有内容不变。"
 ```
 
-## Monitoring token usage
+### 使用代码视图
 
-### Check your balance
+对于开发者，有时直接编辑代码更快：
 
-Monitor tokens in your account:
+1. 使用 AI 生成初始代码
+2. 在代码视图中进行小调整
+3. 仅对复杂更改使用 AI
 
-- View remaining tokens
-- See usage history
-- Track tokens per project
+### 利用上下文
 
-### Set project budgets
-
-Allocate tokens per project:
+AI 记住您的对话：
 
 ```text
-"I have 10,000 tokens for this project. Let's plan 
-carefully to stay within budget."
+"使用与之前相同的配色方案"
+"添加我们之前讨论的功能"
+"将相同的样式应用于这个新区块"
 ```
 
-### Estimate before building
+## 监控令牌使用
 
-Ask AI to estimate token usage:
+### 检查您的余额
+
+在您的账户中监控令牌：
+
+- 查看剩余令牌
+- 查看使用历史
+- 按项目跟踪令牌
+
+### 设置项目预算
+
+为每个项目分配令牌：
 
 ```text
-"How many tokens will it take to build a 5-page 
-website with these features: [list features]"
+"我有 10,000 个令牌用于此项目。让我们仔细计划
+以保持在预算内。"
 ```
 
-## When to use tokens freely
+### 构建前估算
 
-### Complex features
-
-Don't skimp on tokens for complex functionality:
-
-- Database integration
-- Authentication systems
-- Payment processing
-- Complex interactions
-
-These require AI's full capabilities.
-
-### Learning
-
-Invest tokens in learning:
+询问 AI 估算令牌使用：
 
 ```text
-"Explain how this code works and suggest improvements"
+"构建包含这些功能的 5 页网站需要多少令牌：
+[列出功能]"
 ```
 
-Understanding helps you build more efficiently later.
+## 何时自由使用令牌
 
-### Critical fixes
+### 复杂功能
 
-Use tokens to fix important issues:
+不要在复杂功能上吝啬令牌：
+
+- 数据库集成
+- 身份验证系统
+- 支付处理
+- 复杂交互
+
+这些需要 AI 的全部功能。
+
+### 学习
+
+在学习上投资令牌：
 
 ```text
-"The checkout process is broken. Users can't complete 
-purchases. Please debug and fix."
+"解释此代码的工作原理并建议改进"
 ```
 
-## Token-saving checklist
+理解有助于您以后更高效地构建。
 
-Before sending a prompt, ask:
+### 关键修复
 
-- [ ] Is this specific enough?
-- [ ] Can I batch this with other changes?
-- [ ] Can I use the visual editor instead?
-- [ ] Have I provided all necessary information?
-- [ ] Am I using plan or discussion mode when appropriate?
-- [ ] Is this the most efficient way to achieve my goal?
+使用令牌修复重要问题：
 
-## Common token wastes
+```text
+"结账流程已损坏。用户无法完成购买。
+请调试并修复。"
+```
 
-### Repeated corrections
+## 令牌节省清单
 
-❌ Making the same type of correction multiple times
-✅ Provide complete requirements upfront
+在发送提示之前，问：
 
-### Vague requests
+- [ ] 这足够具体吗？
+- [ ] 我可以将此与其他更改批量处理吗？
+- [ ] 我可以改用可视化编辑器吗？
+- [ ] 我是否提供了所有必要的信息？
+- [ ] 我是否在适当时使用计划或讨论模式？
+- [ ] 这是实现我目标的最有效方式吗？
 
-❌ "Make it look better"
-✅ "Increase heading font size to 48px, add 60px spacing between sections"
+## 常见的令牌浪费
 
-### Unnecessary regeneration
+### 重复纠正
 
-❌ Regenerating entire sections for small changes
-✅ Request specific edits to existing code
+❌ 多次进行相同类型的纠正
+✅ 预先提供完整需求
 
-### Not using discussion mode
+### 模糊请求
 
-❌ Using build mode to brainstorm ideas
-✅ Use discussion mode for planning, build mode for execution
+❌ "让它看起来更好"
+✅ "将标题字体大小增加到 48px，在各区块之间添加 60px 间距"
 
-### Ignoring the visual editor
+### 不必要的重新生成
 
-❌ Using AI for simple text changes
-✅ Edit text directly in visual editor
+❌ 为小更改重新生成整个区块
+✅ 请求对现有代码进行特定编辑
 
-## Best practices summary
+### 不使用讨论模式
+
+❌ 使用构建模式进行头脑风暴
+✅ 使用讨论模式进行计划，使用构建模式进行执行
+
+### 忽略可视化编辑器
+
+❌ 使用 AI 进行简单的文本更改
+✅ 在可视化编辑器中直接编辑文本
+
+## 最佳实践总结
 
 <CardGroup cols={2}>
 
-<Card title="Plan before building" icon="map">
-  Use plan mode to refine requirements before consuming tokens.
+<Card title="构建前计划" icon="map">
+  使用计划模式在消耗令牌之前完善需求。
 </Card>
 
-<Card title="Be specific" icon="bullseye">
-  Detailed prompts prevent costly back-and-forth corrections.
+<Card title="要具体" icon="bullseye">
+  详细的提示可以防止昂贵的来回纠正。
 </Card>
 
-<Card title="Batch changes" icon="layer-group">
-  Group related changes into single prompts.
+<Card title="批量更改" icon="layer-group">
+  将相关更改组合到单个提示中。
 </Card>
 
-<Card title="Use discussion mode" icon="comments">
-  Brainstorm without using tokens.
+<Card title="使用讨论模式" icon="comments">
+  在不使用令牌的情况下进行头脑风暴。
 </Card>
 
-<Card title="Leverage visual editor" icon="pen-to-square">
-  Make simple changes without AI.
+<Card title="利用可视化编辑器" icon="pen-to-square">
+  在不使用 AI 的情况下进行简单更改。
 </Card>
 
-<Card title="Build incrementally" icon="stairs">
-  Start simple, add complexity gradually.
+<Card title="逐步构建" icon="stairs">
+  从简单开始，逐渐增加复杂性。
 </Card>
 
 </CardGroup>
