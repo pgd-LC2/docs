@@ -1,0 +1,262 @@
+---
+title: "域名"
+description: "将自定义域名连接到您的网站"
+---
+
+## 域名选项
+
+### 默认子域名
+
+每个项目都会获得一个免费子域名：
+
+```
+yoursite.aisitebuilder.app
+```
+
+这会自动配置并立即可用。
+
+### 自定义域名
+
+连接您自己的域名：
+
+```
+www.yourdomain.com
+yourdomain.com
+```
+
+自定义域名使您的网站看起来更专业，并与访问者建立信任。
+
+## 添加自定义域名
+
+### 步骤 1：购买域名
+
+从注册商购买域名：
+
+- Namecheap
+- GoDaddy
+- Google Domains
+- Cloudflare
+- 任何其他注册商
+
+### 步骤 2：将域名添加到 AISiteBuilder
+
+1. 转到 **项目设置 → 域名**
+2. 点击 **添加自定义域名**
+3. 输入您的域名
+4. 点击 **添加域名**
+
+### 步骤 3：配置 DNS
+
+在您的域名注册商处添加 DNS 记录：
+
+<Tabs>
+  <Tab title="根域名">
+    对于 `yourdomain.com`：
+
+    | 类型 | 名称 | 值 |
+    |------|------|----------|
+    | A | @ | `76.76.21.21` |
+    | AAAA | @ | `2606:4700:3033::ac43:bd8d` |
+  </Tab>
+
+  <Tab title="子域名">
+    对于 `www.yourdomain.com`：
+
+    | 类型 | 名称 | 值 |
+    |------|------|----------|
+    | CNAME | www | `cname.aisitebuilder.app` |
+  </Tab>
+
+  <Tab title="两者">
+    对于 `yourdomain.com` 和 `www.yourdomain.com`：
+
+    | 类型 | 名称 | 值 |
+    |------|------|----------|
+    | A | @ | `76.76.21.21` |
+    | AAAA | @ | `2606:4700:3033::ac43:bd8d` |
+    | CNAME | www | `cname.aisitebuilder.app` |
+  </Tab>
+</Tabs>
+
+### 步骤 4：验证域名
+
+1. 等待 DNS 传播（5 分钟到 48 小时）
+2. AISiteBuilder 将自动验证您的域名
+3. SSL 证书自动生成
+4. 您的网站在自定义域名上上线
+
+<Tip>
+  DNS 更改通常在 15-30 分钟内传播，但在某些情况下可能需要长达 48 小时。
+</Tip>
+
+## SSL 证书
+
+### 自动 SSL
+
+SSL 证书会自动：
+
+- 在您添加域名时生成
+- 在到期前续订
+- 应用于所有域名
+
+您的网站始终通过 HTTPS 提供服务。
+
+### 手动 SSL 请求
+
+如果自动生成失败：
+
+1. 转到 **项目设置 → 域名**
+2. 找到您的域名
+3. 点击 **请求 SSL 证书**
+4. 证书将被生成
+
+## 域名管理
+
+### 主域名
+
+设置哪个域名是您的主 URL：
+
+1. 转到 **项目设置 → 域名**
+2. 在您首选的域名上点击 **设置为主域名**
+3. 其他域名将重定向到主域名
+
+### 域名别名
+
+添加指向您网站的多个域名：
+
+- 所有别名重定向到主域名
+- 适用于多个顶级域名（.com、.net、.io）
+- 通过适当的重定向维护 SEO
+
+### 删除域名
+
+删除您不再需要的域名：
+
+1. 转到 **项目设置 → 域名**
+2. 点击域名旁边的 **删除**
+3. 确认删除
+
+<Warning>
+  删除域名将使您的网站在该 URL 上无法访问。
+</Warning>
+
+## 子域名
+
+### 使用子域名
+
+为不同目的创建子域名：
+
+```
+blog.yourdomain.com
+shop.yourdomain.com
+app.yourdomain.com
+```
+
+### 添加子域名
+
+1. 在 AISiteBuilder 中添加子域名
+2. 在您的注册商处创建 CNAME 记录：
+
+| 类型 | 名称 | 值 |
+|------|------|----------|
+| CNAME | blog | `cname.aisitebuilder.app` |
+
+### 子域名作为主域名
+
+您可以使用子域名作为主域名：
+
+1. 添加子域名
+2. 设置为主域名
+3. 配置 DNS
+
+## DNS 配置指南
+
+### Namecheap
+
+1. 登录 Namecheap
+2. 转到 **域名列表**
+3. 点击域名旁边的 **管理**
+4. 转到 **高级 DNS** 选项卡
+5. 添加 DNS 记录
+6. 保存更改
+
+### GoDaddy
+
+1. 登录 GoDaddy
+2. 转到 **我的产品**
+3. 点击域名旁边的 **DNS**
+4. 添加 DNS 记录
+5. 保存更改
+
+### Cloudflare
+
+1. 登录 Cloudflare
+2. 选择您的域名
+3. 转到 **DNS** 选项卡
+4. 添加 DNS 记录
+5. 确保代理状态为 **仅 DNS**（灰色云）
+
+### Google Domains
+
+1. 登录 Google Domains
+2. 选择您的域名
+3. 转到 **DNS** 选项卡
+4. 添加 DNS 记录
+5. 保存更改
+
+## 故障排除
+
+<AccordionGroup>
+  <Accordion title="域名无法连接">
+    如果您的域名无法连接：
+    - 验证 DNS 记录是否正确
+    - 等待 DNS 传播（最多 48 小时）
+    - 检查 DNS 配置中的拼写错误
+    - 确保不存在冲突的 DNS 记录
+  </Accordion>
+
+  <Accordion title="SSL 证书未生成">
+    如果 SSL 不起作用：
+    - 验证域名已正确连接
+    - DNS 传播后等待 10-15 分钟
+    - 尝试手动 SSL 请求
+    - 检查 DNS 记录是否指向正确的 IP
+  </Accordion>
+
+  <Accordion title="重定向循环">
+    如果您遇到重定向循环：
+    - 检查只有一个域名设置为主域名
+    - 验证 DNS 中没有冲突的重定向
+    - 清除浏览器缓存
+    - 检查注册商处的重定向规则
+  </Accordion>
+
+  <Accordion title="DNS 传播检查">
+    要检查 DNS 传播：
+    - 使用 [whatsmydns.net](https://whatsmydns.net)
+    - 输入您的域名
+    - 检查记录是否在全球可见
+  </Accordion>
+</AccordionGroup>
+
+## 最佳实践
+
+<CardGroup cols={2}>
+
+<Card title="使用 www 子域名" icon="globe">
+  配置根域名和 www 子域名以实现最大兼容性。
+</Card>
+
+<Card title="设置主域名" icon="star">
+  选择一个主域名以避免重复内容问题。
+</Card>
+
+<Card title="启用 SSL" icon="lock">
+  始终使用 HTTPS 以获得安全性和 SEO 优势。
+</Card>
+
+<Card title="监控到期" icon="calendar">
+  跟踪域名续订日期以避免到期。
+</Card>
+
+</CardGroup>
