@@ -9,48 +9,101 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "Get started",
-        "icon": "rocket",
-        "pages": [
-          "introduction",
-          "get-started/quickstart",
-          "get-started/video-tutorials"
+        "language": "en",
+        "groups": [
+          {
+            "group": "Get started",
+            "icon": "rocket",
+            "pages": [
+              "introduction",
+              "get-started/quickstart",
+              "get-started/video-tutorials"
+            ]
+          },
+          {
+            "group": "Building websites",
+            "icon": "wand-magic-sparkles",
+            "pages": [
+              "building/using-editor",
+              "building/ai-agents",
+              "building/project-settings"
+            ]
+          },
+          {
+            "group": "Infrastructure",
+            "icon": "server",
+            "pages": [
+              "infrastructure/shujuku",
+              "infrastructure/domains",
+              "infrastructure/hosting"
+            ]
+          },
+          {
+            "group": "Best practices",
+            "icon": "lightbulb",
+            "pages": [
+              "best-practices/prompting",
+              "best-practices/token-efficiency"
+            ]
+          },
+          {
+            "group": "Account",
+            "icon": "user",
+            "pages": [
+              "account/account-management",
+              "account/billing"
+            ]
+          }
         ]
       },
       {
-        "group": "Building websites",
-        "icon": "wand-magic-sparkles",
-        "pages": [
-          "building/using-editor",
-          "building/ai-agents",
-          "building/project-settings"
-        ]
-      },
-      {
-        "group": "基础设施",
-        "icon": "server",
-        "pages": [
-          "infrastructure/shujuku",
-          "infrastructure/domains",
-          "infrastructure/hosting"
-        ]
-      },
-      {
-        "group": "Best practices",
-        "icon": "lightbulb",
-        "pages": [
-          "best-practices/prompting",
-          "best-practices/token-efficiency"
-        ]
-      },
-      {
-        "group": "Account",
-        "icon": "user",
-        "pages": [
-          "account/account-management",
-          "account/billing"
+        "language": "zh-Hans",
+        "groups": [
+          {
+            "group": "开始使用",
+            "icon": "rocket",
+            "pages": [
+              "zh-CN/introduction",
+              "zh-CN/get-started/quickstart",
+              "zh-CN/get-started/video-tutorials"
+            ]
+          },
+          {
+            "group": "构建网站",
+            "icon": "wand-magic-sparkles",
+            "pages": [
+              "zh-CN/building/using-editor",
+              "zh-CN/building/ai-agents",
+              "zh-CN/building/project-settings"
+            ]
+          },
+          {
+            "group": "基础设施",
+            "icon": "server",
+            "pages": [
+              "zh-CN/infrastructure/shujuku",
+              "zh-CN/infrastructure/domains",
+              "zh-CN/infrastructure/hosting"
+            ]
+          },
+          {
+            "group": "最佳实践",
+            "icon": "lightbulb",
+            "pages": [
+              "zh-CN/best-practices/prompting",
+              "zh-CN/best-practices/token-efficiency"
+            ]
+          },
+          {
+            "group": "账户",
+            "icon": "user",
+            "pages": [
+              "zh-CN/account/account-management",
+              "zh-CN/account/billing"
+            ]
+          }
         ]
       }
     ],
