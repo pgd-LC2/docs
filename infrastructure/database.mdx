@@ -1,0 +1,115 @@
+---
+title: "Database"
+description: "Add dynamic data to your websites with built-in database"
+---
+
+## Overview
+
+AISiteBuilder includes a built-in PostgreSQL database for storing and managing dynamic data. No external database service required.
+
+## Creating tables
+
+### Using AI
+
+The easiest way to create database tables is through conversation:
+
+```text
+Add a database table for blog posts with:
+- title (text)
+- content (long text)
+- author (text)
+- published_date (date)
+- featured_image (image URL)
+```
+
+AI will create the table and generate the necessary code to interact with it.
+
+### Manual creation
+
+Create tables in the database settings:
+
+1. Go to **Project Settings → Database**
+2. Click **Add Table**
+3. Define table name and columns
+4. Set data types and constraints
+5. Save the table
+
+## Data types
+
+Supported column types:
+
+- **text** - Short text strings
+- **longtext** - Long text content
+- **integer** - Whole numbers
+- **decimal** - Decimal numbers
+- **boolean** - True/false values
+- **date** - Date only
+- **datetime** - Date and time
+- **json** - JSON data
+- **uuid** - Unique identifier
+
+## Working with data
+
+### Inserting data
+
+Add data through your website interface or directly in settings.
+
+### Querying data
+
+Retrieve data from your tables using the built-in query interface.
+
+### Updating data
+
+Modify existing records through the database management interface.
+
+### Deleting data
+
+Remove records when no longer needed.
+
+## Database management
+
+### Viewing data
+
+Browse your database in settings:
+
+- View all tables
+- See table contents
+- Filter and search data
+- Export to CSV
+
+### Editing data
+
+Modify data directly:
+
+- Edit individual records
+- Bulk updates
+- Delete records
+- Import from CSV
+
+## Backups
+
+### Automatic backups
+
+Daily backups are created automatically:
+
+- Last 7 days retained
+- Stored securely
+- One-click restore
+
+### Manual backups
+
+Create backups before important changes:
+
+1. Go to **Database Settings**
+2. Click **Create Backup**
+3. Add description
+4. Backup is created instantly
+
+## Security
+
+Database access is automatically secured:
+
+- Server-side only access
+- No direct client access
+- Encrypted connections
+- Row-level security
