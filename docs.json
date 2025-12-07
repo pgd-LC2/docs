@@ -9,76 +9,62 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "Get started",
+        "icon": "rocket",
+        "pages": [
+          "introduction",
+          "get-started/quickstart",
+          "get-started/video-tutorials"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Building websites",
+        "icon": "wand-magic-sparkles",
+        "pages": [
+          "building/using-editor",
+          "building/ai-agents",
+          "building/project-settings"
+        ]
+      },
+      {
+        "group": "Infrastructure",
+        "icon": "server",
+        "pages": [
+          "infrastructure/database",
+          "infrastructure/domains",
+          "infrastructure/hosting"
+        ]
+      },
+      {
+        "group": "Best practices",
+        "icon": "lightbulb",
+        "pages": [
+          "best-practices/prompting",
+          "best-practices/token-efficiency"
+        ]
+      },
+      {
+        "group": "Account",
+        "icon": "user",
+        "pages": [
+          "account/account-management",
+          "account/billing"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://aisitebuilder.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Community",
+          "href": "https://discord.gg/aisitebuilder",
+          "icon": "discord"
         }
       ]
     }
