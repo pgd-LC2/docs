@@ -1,0 +1,354 @@
+---
+title: "Token efficiency"
+description: "Maximize your tokens and build more with less"
+---
+
+## Understanding tokens
+
+Tokens are the currency of AI interactions. Each message you send and each response from AI consumes tokens.
+
+### What uses tokens
+
+- **Your prompts** - Messages you send to AI
+- **AI responses** - Code and text AI generates
+- **Context** - Previous conversation history
+- **Code edits** - Modifications to existing code
+
+### What doesn't use tokens
+
+- **Preview** - Viewing your website
+- **Discussion mode** - Brainstorming without building
+- **Settings changes** - Configuring your project
+- **File browsing** - Viewing project files
+
+## Token-saving strategies
+
+### Use plan mode
+
+Plan mode helps you refine requirements before building:
+
+1. Describe your complete vision
+2. AI creates a detailed plan
+3. Review and adjust the plan
+4. Build only when plan is perfect
+
+This prevents costly rebuilds from misunderstood requirements.
+
+### Use discussion mode
+
+Brainstorm and clarify ideas without using tokens:
+
+```text
+[In discussion mode]
+I'm thinking about adding a blog to my website. 
+What sections should I include? What's the best 
+way to organize posts?
+```
+
+Once you've decided, switch to build mode with clear requirements.
+
+### Be specific upfront
+
+Vague prompts lead to back-and-forth corrections:
+
+❌ **Wasteful:**
+```text
+You: "Add a contact form"
+AI: [creates basic form]
+You: "Add phone number field"
+AI: [adds field]
+You: "Add validation"
+AI: [adds validation]
+You: "Make it two columns"
+AI: [restructures form]
+```
+
+✅ **Efficient:**
+```text
+You: "Add a contact form with name, email, phone, and 
+message fields. Use two-column layout. Include validation 
+for all fields. Show error messages below each field."
+AI: [creates complete form correctly]
+```
+
+### Batch related changes
+
+Group similar changes together:
+
+❌ **Wasteful:**
+```text
+"Change the button color to blue"
+"Make the button larger"
+"Add rounded corners to the button"
+"Add a shadow to the button"
+```
+
+✅ **Efficient:**
+```text
+"Update the button: blue background, larger size, 
+rounded corners, and subtle shadow"
+```
+
+### Use the visual editor
+
+For simple changes, use the visual editor instead of AI:
+
+- Text edits
+- Color changes
+- Image swaps
+- Spacing adjustments
+
+Save tokens for complex changes that require code.
+
+### Provide complete information
+
+Include all necessary details in one prompt:
+
+```text
+Create a pricing section with:
+- Three tiers: Basic ($9/mo), Pro ($29/mo), Enterprise (custom)
+- Features list for each tier
+- "Most popular" badge on Pro tier
+- Annual/monthly toggle
+- CTA button on each tier
+- Responsive design (stack on mobile)
+```
+
+### Reference existing elements
+
+Build on what exists:
+
+```text
+"Create a testimonials section using the same card 
+style as the features section"
+```
+
+This is clearer and more efficient than describing the style from scratch.
+
+## Efficient workflows
+
+### Start with structure
+
+Build the skeleton first, then add details:
+
+1. **Structure:** "Create a landing page with header, hero, features, testimonials, pricing, and footer"
+2. **Content:** "Add this content to the hero section: [content]"
+3. **Styling:** "Update the color scheme to use blue and green"
+4. **Polish:** "Add animations and hover effects"
+
+### Use templates
+
+Start with a template for common patterns:
+
+```text
+"Create a standard SaaS landing page template"
+```
+
+Then customize:
+
+```text
+"Update the hero headline to: [your headline]"
+"Change the features to: [your features]"
+```
+
+### Iterate strategically
+
+Make changes in logical order:
+
+1. Get the layout right
+2. Add content
+3. Refine styling
+4. Add interactions
+5. Polish details
+
+Don't jump around randomly—each iteration should build on the previous.
+
+### Save successful prompts
+
+Keep a document of prompts that worked well:
+
+```text
+Pricing section prompt:
+"Create a pricing section with three tiers in a row. 
+Each tier should have: name, price, feature list, 
+and CTA button. Highlight the middle tier. Use card 
+design with subtle shadows."
+```
+
+Reuse these for future projects.
+
+## Advanced techniques
+
+### Incremental building
+
+Build complex features in stages:
+
+**Stage 1:** Basic functionality
+```text
+"Create a blog post list showing title and excerpt"
+```
+
+**Stage 2:** Add features
+```text
+"Add category filtering to the blog list"
+```
+
+**Stage 3:** Polish
+```text
+"Add pagination and search to the blog"
+```
+
+### Selective editing
+
+Edit specific parts instead of regenerating:
+
+```text
+"In the hero section, change only the headline to: 
+[new headline]. Keep everything else the same."
+```
+
+### Use code view
+
+For developers, sometimes editing code directly is faster:
+
+1. Generate initial code with AI
+2. Make small tweaks in code view
+3. Use AI only for complex changes
+
+### Leverage context
+
+AI remembers your conversation:
+
+```text
+"Use the same color scheme as before"
+"Add that feature we discussed earlier"
+"Apply the same style to this new section"
+```
+
+## Monitoring token usage
+
+### Check your balance
+
+Monitor tokens in your account:
+
+- View remaining tokens
+- See usage history
+- Track tokens per project
+
+### Set project budgets
+
+Allocate tokens per project:
+
+```text
+"I have 10,000 tokens for this project. Let's plan 
+carefully to stay within budget."
+```
+
+### Estimate before building
+
+Ask AI to estimate token usage:
+
+```text
+"How many tokens will it take to build a 5-page 
+website with these features: [list features]"
+```
+
+## When to use tokens freely
+
+### Complex features
+
+Don't skimp on tokens for complex functionality:
+
+- Database integration
+- Authentication systems
+- Payment processing
+- Complex interactions
+
+These require AI's full capabilities.
+
+### Learning
+
+Invest tokens in learning:
+
+```text
+"Explain how this code works and suggest improvements"
+```
+
+Understanding helps you build more efficiently later.
+
+### Critical fixes
+
+Use tokens to fix important issues:
+
+```text
+"The checkout process is broken. Users can't complete 
+purchases. Please debug and fix."
+```
+
+## Token-saving checklist
+
+Before sending a prompt, ask:
+
+- [ ] Is this specific enough?
+- [ ] Can I batch this with other changes?
+- [ ] Can I use the visual editor instead?
+- [ ] Have I provided all necessary information?
+- [ ] Am I using plan or discussion mode when appropriate?
+- [ ] Is this the most efficient way to achieve my goal?
+
+## Common token wastes
+
+### Repeated corrections
+
+❌ Making the same type of correction multiple times
+✅ Provide complete requirements upfront
+
+### Vague requests
+
+❌ "Make it look better"
+✅ "Increase heading font size to 48px, add 60px spacing between sections"
+
+### Unnecessary regeneration
+
+❌ Regenerating entire sections for small changes
+✅ Request specific edits to existing code
+
+### Not using discussion mode
+
+❌ Using build mode to brainstorm ideas
+✅ Use discussion mode for planning, build mode for execution
+
+### Ignoring the visual editor
+
+❌ Using AI for simple text changes
+✅ Edit text directly in visual editor
+
+## Best practices summary
+
+<CardGroup cols={2}>
+
+<Card title="Plan before building" icon="map">
+  Use plan mode to refine requirements before consuming tokens.
+</Card>
+
+<Card title="Be specific" icon="bullseye">
+  Detailed prompts prevent costly back-and-forth corrections.
+</Card>
+
+<Card title="Batch changes" icon="layer-group">
+  Group related changes into single prompts.
+</Card>
+
+<Card title="Use discussion mode" icon="comments">
+  Brainstorm without using tokens.
+</Card>
+
+<Card title="Leverage visual editor" icon="pen-to-square">
+  Make simple changes without AI.
+</Card>
+
+<Card title="Build incrementally" icon="stairs">
+  Start simple, add complexity gradually.
+</Card>
+
+</CardGroup>

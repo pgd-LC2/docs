@@ -1,0 +1,377 @@
+---
+title: "Effective prompting"
+description: "Master the art of communicating with AI for better results"
+---
+
+## Principles of effective prompting
+
+### Be specific
+
+Vague requests lead to vague results. Provide clear, detailed instructions.
+
+<CodeGroup>
+
+```text Good
+Create a hero section with:
+- Headline: "Build Websites Faster"
+- Subheadline: "AI-powered website builder for everyone"
+- Two CTA buttons: "Get Started" (primary) and "Watch Demo" (secondary)
+- Background: gradient from blue to purple
+- Include a mockup image on the right side
+```
+
+```text Bad
+Make a nice hero section
+```
+
+</CodeGroup>
+
+### Provide context
+
+Help AI understand your goals and audience.
+
+```text
+I'm building a landing page for a B2B SaaS product targeting 
+small business owners. The product helps manage customer 
+relationships. Create a features section highlighting:
+- Easy contact management
+- Automated follow-ups
+- Sales pipeline tracking
+Use professional, trustworthy design.
+```
+
+### Use examples
+
+Reference existing websites or designs:
+
+```text
+Create a pricing section similar to Stripe's pricing page:
+- Three tiers: Starter, Professional, Enterprise
+- Monthly and annual toggle
+- Feature comparison list
+- Highlight the Professional tier
+```
+
+### Break down complex requests
+
+For large projects, work in steps:
+
+1. "Create the overall page structure with header, hero, features, and footer"
+2. "Now add a testimonials section between features and footer"
+3. "Add a pricing table before the footer"
+4. "Finally, add a FAQ accordion at the bottom"
+
+## Prompting patterns
+
+### Structural prompts
+
+Define layout and structure:
+
+```text
+Create a landing page with this structure:
+1. Navigation bar (logo left, menu items right)
+2. Hero section (full width, centered content)
+3. Features grid (3 columns)
+4. Testimonials carousel
+5. CTA section
+6. Footer (3 columns: company info, links, social)
+```
+
+### Design prompts
+
+Specify visual style:
+
+```text
+Design style:
+- Modern and minimal
+- Primary color: #3B82F6 (blue)
+- Secondary color: #10B981 (green)
+- Font: Inter for headings, system font for body
+- Rounded corners on buttons and cards
+- Subtle shadows for depth
+- Lots of white space
+```
+
+### Content prompts
+
+Provide or request content:
+
+```text
+For the hero section, use this content:
+Headline: "Ship Faster with AI"
+Subheadline: "Build production-ready websites in minutes, not weeks"
+CTA: "Start Building Free"
+
+For other sections, generate appropriate placeholder content.
+```
+
+### Functional prompts
+
+Describe behavior and interactions:
+
+```text
+Add these interactions:
+- Smooth scroll to sections when clicking nav links
+- Fade in animations as sections come into view
+- Hover effects on buttons (scale up slightly)
+- Mobile menu that slides in from the right
+- Form validation with error messages
+```
+
+## Common scenarios
+
+### Building a landing page
+
+```text
+Create a landing page for [product name], a [product description].
+
+Target audience: [describe audience]
+
+Sections needed:
+1. Hero with headline, subheadline, CTA, and hero image
+2. Problem/solution section
+3. Features grid (3 features)
+4. Social proof (logos or testimonials)
+5. Pricing (3 tiers)
+6. FAQ
+7. Final CTA
+
+Design: [modern/professional/playful/etc.]
+Colors: [primary and secondary colors]
+```
+
+### Adding a feature
+
+```text
+Add a testimonials section after the features section.
+
+Requirements:
+- Show 3 testimonials in a row
+- Each testimonial includes: quote, author name, author title, author photo
+- Add subtle background color to distinguish from other sections
+- Make it responsive (stack on mobile)
+
+Use these testimonials:
+[paste testimonial content]
+```
+
+### Fixing issues
+
+```text
+The mobile menu isn't working properly. When I click the 
+hamburger icon, nothing happens. Please fix the mobile 
+navigation so it:
+- Opens a slide-in menu from the right
+- Shows all navigation links
+- Includes a close button
+- Closes when clicking outside the menu
+```
+
+### Styling changes
+
+```text
+Update the color scheme:
+- Change primary color from blue to purple (#8B5CF6)
+- Update all buttons to use the new primary color
+- Adjust hover states to be slightly darker
+- Update the hero gradient to use purple tones
+- Keep everything else the same
+```
+
+## Advanced techniques
+
+### Iterative refinement
+
+Start broad, then refine:
+
+1. "Create a features section"
+2. "Make the features grid 4 columns instead of 3"
+3. "Add icons to each feature"
+4. "Increase spacing between features"
+5. "Add a subtle hover effect"
+
+### Conditional requests
+
+Provide options:
+
+```text
+Create a pricing section. If possible, add:
+- Annual/monthly toggle
+- Feature comparison tooltip
+- "Most popular" badge on middle tier
+
+If those are too complex, start with a simple 3-tier layout.
+```
+
+### Reference previous work
+
+Build on what exists:
+
+```text
+Using the same design style as the hero section, create 
+a CTA section with:
+- Compelling headline
+- Short description
+- Single prominent button
+- Background color that complements the hero
+```
+
+## Plan mode
+
+### When to use plan mode
+
+Use plan mode for:
+
+- Complex multi-page websites
+- Projects with many features
+- When you want to review before building
+- Large scope projects
+
+### Effective planning prompts
+
+```text
+I want to build a complete website for a restaurant.
+
+Pages needed:
+- Home (hero, about, menu preview, reservations CTA)
+- Menu (categorized menu items with prices and descriptions)
+- About (story, team, photos)
+- Contact (form, map, hours, phone)
+
+Features:
+- Online reservation system
+- Menu filtering by category
+- Photo gallery
+- Contact form with validation
+
+Design: Warm, inviting, food-focused
+Colors: Earth tones (browns, oranges, greens)
+
+Please create a detailed plan before building.
+```
+
+## Discussion mode
+
+### Brainstorming
+
+Use discussion mode to explore ideas:
+
+```text
+I want to create a website for my photography business. 
+I'm not sure what sections to include or how to structure it. 
+Can you suggest some options and help me decide?
+```
+
+### Getting recommendations
+
+```text
+What's the best way to showcase a portfolio of 50+ projects? 
+Should I use a grid, a carousel, or something else? 
+What are the pros and cons of each approach?
+```
+
+### Clarifying requirements
+
+```text
+I need a contact form, but I'm not sure what fields to include. 
+What's standard for a B2B service business? Should I ask for 
+company size, budget, timeline?
+```
+
+## Common mistakes
+
+### Too vague
+
+❌ "Make it look better"
+✅ "Increase font size of headings, add more spacing between sections, and use a lighter background color"
+
+### Too many changes at once
+
+❌ "Change colors, add animations, restructure the layout, add new sections, and update all the content"
+✅ Make one change at a time, test, then move to the next
+
+### Assuming context
+
+❌ "Add the usual sections"
+✅ "Add these sections: features, testimonials, pricing, FAQ"
+
+### Not providing content
+
+❌ "Create an about page"
+✅ "Create an about page with this content: [paste content]"
+
+## Tips for success
+
+<AccordionGroup>
+  <Accordion title="Start with structure">
+    Define the overall structure before diving into details. This helps AI understand the big picture.
+  </Accordion>
+
+  <Accordion title="Use consistent terminology">
+    Stick to the same terms throughout your conversation. Don't switch between "hero section" and "banner."
+  </Accordion>
+
+  <Accordion title="Provide visual references">
+    Link to websites or describe specific designs you like. "Make it like Apple's website" is clearer than "make it minimal."
+  </Accordion>
+
+  <Accordion title="Test incrementally">
+    Make changes, test them, then continue. Don't wait until the end to preview your website.
+  </Accordion>
+
+  <Accordion title="Be patient with complex requests">
+    Large, complex websites take time. Break them into manageable pieces.
+  </Accordion>
+</AccordionGroup>
+
+## Prompt templates
+
+### Landing page
+
+```text
+Create a [industry] landing page for [product/service name].
+
+Purpose: [describe goal]
+Target audience: [describe audience]
+
+Sections:
+- Hero: [describe]
+- Features: [list features]
+- Social proof: [testimonials/logos/stats]
+- Pricing: [tiers and prices]
+- CTA: [call to action]
+
+Design: [style description]
+Colors: [color scheme]
+```
+
+### Portfolio
+
+```text
+Create a portfolio website for a [profession].
+
+Pages:
+- Home: [sections]
+- Work: [project showcase]
+- About: [bio and experience]
+- Contact: [contact form]
+
+Style: [design preferences]
+Showcase: [number] projects in [grid/carousel/other]
+```
+
+### E-commerce
+
+```text
+Create an e-commerce website for [product category].
+
+Features:
+- Product catalog with [number] items
+- Shopping cart
+- Checkout process
+- Product filtering and search
+- Product detail pages
+
+Design: [style]
+Categories: [list categories]
+```
