@@ -29,10 +29,10 @@
         ]
       },
       {
-        "group": "Infrastructure",
+        "group": "基础设施",
         "icon": "server",
         "pages": [
-          "infrastructure/database",
+          "infrastructure/shujuku",
           "infrastructure/domains",
           "infrastructure/hosting"
         ]
