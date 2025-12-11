@@ -67,6 +67,11 @@
           "anchor": "Website",
           "href": "https://aichuangfangpgd.netlify.app/",
           "icon": "globe"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://docs.aichuangfang.com/community",
+          "icon": "users"
         }
       ]
     }
