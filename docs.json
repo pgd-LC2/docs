@@ -67,11 +67,6 @@
           "anchor": "Website",
           "href": "https://aichuangfangpgd.netlify.app/",
           "icon": "globe"
-        },
-        {
-          "anchor": "社区",
-          "icon": "users",
-          "pages": ["community"]
         }
       ]
     }
