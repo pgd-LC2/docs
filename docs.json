@@ -52,6 +52,13 @@
           "account/account-management",
           "account/billing"
         ]
+      },
+      {
+        "group": "社区",
+        "icon": "discord",
+        "pages": [
+          "community"
+        ]
       }
     ],
     "global": {
@@ -60,11 +67,6 @@
           "anchor": "Website",
           "href": "https://aichuangfangpgd.netlify.app/",
           "icon": "globe"
-        },
-        {
-          "anchor": "Community",
-          "pages": ["community"],
-          "icon": "discord"
         }
       ]
     }
