@@ -63,7 +63,7 @@
         },
         {
           "anchor": "Community",
-          "href": "https://discord.gg/aisitebuilder",
+          "pages": ["community"],
           "icon": "discord"
         }
       ]
